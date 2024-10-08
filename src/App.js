@@ -1,8 +1,11 @@
-
-
+import Header from "./componens/header";
+import Footer from "./componens/footer";
 function App() {
   return (
-    <div>Shop</div>
+    <div className="wrapper">
+      <Header />
+      <Footer />
+    </div>
   );
 }
 
