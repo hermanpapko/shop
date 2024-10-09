@@ -162,6 +162,18 @@ main .add-to-cart:hover {
     transform: scale(1.5) translateY(-5px);
 }
 
+.categories {
+    margin: 35px 0;
+}
+
+.categories div {
+    background: #f3f3f3;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin-right: 20px;
+}
+
 footer {
     text-align: center;
     margin-top: 100px;
