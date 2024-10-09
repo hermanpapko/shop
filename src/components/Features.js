@@ -1,20 +1,9 @@
-// import React, { Component } from 'react'
+import React, { Component } from 'react'
 
-// export class Features extends Component {
-//     render() {
-//         return (
-            
-//         )
-//     }
-// }
-
-// export default features
-
-import React, { memo } from 'react'
-
-const features = memo(() => {
-  return (
-   <div className='features'>
+export class Features extends Component {
+    render() {
+        return (
+            <div className='features'>
                 <span>Фичи</span>
                 <h2>Краткое описание наших преимуществ</h2>
                 <div className='blocks'>
@@ -35,7 +24,8 @@ const features = memo(() => {
                     </div>
                 </div>
             </div>
-  )
-})
+        )
+    }
+}
 
-export default features
+export default Features
