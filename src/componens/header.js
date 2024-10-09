@@ -5,6 +5,12 @@ export default function header() {
     <header>
         <div>
             <span className='logo'>House Staff</span>
+            <ul className='nav'>
+              <li>Про нас</li>
+              <li>Контакты</li>
+              <li>Кабинет</li>
+              <li>Про нас</li>
+            </ul>
         </div>
         <div className='presentation'></div>
     </header>
