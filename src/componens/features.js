@@ -1,14 +1,3 @@
-// import React, { Component } from 'react'
-
-// export class Features extends Component {
-//     render() {
-//         return (
-            
-//         )
-//     }
-// }
-
-// export default features
 
 import React, { memo } from 'react'
 
