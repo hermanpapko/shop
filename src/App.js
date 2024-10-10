@@ -2,8 +2,8 @@ import React from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Features from "./components/Features";
-import Items from "./componens/items";
-import Categories from "./componens/categories";
+import Items from "./components/items";
+import Categories from "./components/categories";
 
 class App extends React.Component {
   constructor(props) {

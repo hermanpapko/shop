@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { FaShoppingCart } from "react-icons/fa";
 export default function Header() {
     return (
         <header>
@@ -10,6 +10,7 @@ export default function Header() {
                     <li>Контакты</li>
                     <li>Кабинет</li>
                 </ul>
+                <FaShoppingCart className='shop-cart-button'/>
             </div>
             <div className='presentation'></div>
         </header>
