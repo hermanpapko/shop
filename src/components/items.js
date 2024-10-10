@@ -1,15 +1,16 @@
 import React, { Component } from 'react'
 import Item from './item'
-export class items extends Component {
-  render() {
-    return (
-      <main>
-        {this.props.items.map(el => (
-            <Item key={el.id} item={el} />
-        ))}
-      </main>
-    )
-  }
+
+export class Items extends Component {
+    render() {
+        return (
+            <main>
+                {this.props.items.map(el => (
+                    <Item key={el.id} item={el} setCartOpen={this.props.setCartOpen} />
+                ))}
+            </main>
+        )
+    }
 }
 
-export default items
+export default Items
