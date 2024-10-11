@@ -2,12 +2,12 @@ import React from "react"
 import Header from "./components/Header"
 import Footer from "./components/Footer"
 import Items from "./components/items"
+import Item from "./components/item"
 
 class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      // Выносим состояние сюда, так как его нужно передать в Items
       cartOpen: false,
       items: [
         {
@@ -57,7 +57,6 @@ class App extends React.Component {
   render() {
     return (
       <div className="wrapper">
-        {/* Передаем состояние и метод для его изменения внутрь наших компонентов */}
         <Header setCartOpen={this.setCartOpen} cartOpen={this.state.cartOpen} />
         <Items items={this.state.items} setCartOpen={this.setCartOpen} />
         <Footer />
@@ -65,10 +64,8 @@ class App extends React.Component {
     )
   }
 
-  // Метод для изменения состояния
   setCartOpen() {
-    // Ставим всегда противоположное
-    this.setState({ cartOpen: !this.state.cartOpen })
+    this.setState({ cartOpen: !this.setCartOpen.cartOpen })
   }
 }
 
