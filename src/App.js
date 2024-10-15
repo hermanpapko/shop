@@ -2,6 +2,7 @@ import React from "react"
 import Header from "./components/Header"
 import Footer from "./components/Footer"
 import Items from "./components/items"
+import Features from "./components/Features"
 
 class App extends React.Component {
   constructor(props) {
@@ -58,9 +59,10 @@ class App extends React.Component {
   render() {
     return (
       <div className="wrapper">
-        <Header ordders={this.state.orders} />
+        <Header orders={this.state.orders} />
         <Items items={this.state.items} onAdd={this.addToOrder} />
         <Footer />
+        <Features />
       </div>
     )
   }

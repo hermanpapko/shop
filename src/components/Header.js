@@ -17,9 +17,9 @@ let [cartOpen, setCartOpen] = useState(false)
 
                     {cartOpen && (
                         <div className='shop-cart'>
-                        {props.orders.map(el => (
-                          <Order key={el.id} item={el} />
-                        ))}
+{props.orders.map(el => (
+    <Order key={el.id} item={el} />
+))}
                         </div>
                     )}
             </div>
