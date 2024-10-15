@@ -7,6 +7,7 @@ class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
+      orders: [],
       cartOpen: false,
       items: [
         {
@@ -52,12 +53,13 @@ class App extends React.Component {
       ]
     }
     this.setCartOpen = this.setCartOpen.bind(this)
+    this.addToOrder= this.addToOrder.bind(this)
   }
   render() {
     return (
       <div className="wrapper">
-        <Header setCartOpen={this.setCartOpen} cartOpen={this.state.cartOpen} />
-        <Items items={this.state.items} setCartOpen={this.setCartOpen} />
+        <Header ordders={this.state.orders} />
+        <Items items={this.state.items} onAdd={this.addToOrder} />
         <Footer />
       </div>
     )
@@ -65,6 +67,10 @@ class App extends React.Component {
 
   setCartOpen() {
     this.setState({ cartOpen: !this.setCartOpen.cartOpen })
+  }
+
+  addToOrder(item) {
+  this.setState({orders: [...this.state.orders, item]})
   }
 }
 
